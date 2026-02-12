@@ -419,6 +419,19 @@ input {
     z-index: 10;
 }
 
+/* Fix for iOS button styling */
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: #000000; /* Force black text color */
+}
+
+button svg {
+    color: #000000; /* Force black SVG color */
+    stroke: #000000; /* Force black stroke */
+}
+
 /* Typewriter cursor effect */
 /* #typewriter::after {
     content: '|';
