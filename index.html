@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Koi</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+<body onclick="document.getElementById('bgmusic').play()">
+    <div id="first-content">
+        <img src="assets/media/yippie.png" alt="Cat" class="yippie-img">
+        <button id="start-btn">Meow!</button>
+    </div>
+    
+    <div id="second-content" style="display: none;">
+        <div class="cat-message-wrapper">
+            <img src="assets/media/hmm.png" alt="Cat" class="hmm-img">
+            <div class="container">
+                <div class="arrow">
+                    <div class="outer"></div>   
+                    <div class="inner"></div>
+                </div>
+                <div class="message-body">
+                    <p id="typewriter"></p>
+                </div>
+            </div>
+        </div>
+        <button id="learn-btn">Learn Meownese</button>
+        <div id="input-section" style="display: none;">
+            <input type="text" id="cat-name-input" placeholder="Enter">
+            <button id="submit-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 2L11 13"></path>
+                    <path d="M22 2L15 22L11 13L2 9L22 2Z"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div id="third-content" style="display: none;">
+        <canvas id="confetti-canvas"></canvas>
+        <div class="cat-message-wrapper">
+            <img src="assets/media/welcome.png" alt="Cat" class="hi-img">
+            <div class="container">
+                <div class="arrow">
+                    <div class="outer"></div>   
+                    <div class="inner"></div>
+                </div>
+                <div class="message-body">
+                    <p id="typewriter-third"></p>
+                </div>
+            </div>
+        </div>
+        <button id="meow-btn">Meow</button>
+    </div>
+
+    <div id="fourth-content" style="display: none;">
+        <img src="assets/media/ksssk.png" alt="Cat" class="kssk-img">
+        <div id="input-section-fourth">
+            <input type="text" id="cat-name-input-fourth" placeholder="Enter">
+            <button id="submit-btn-fourth">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 2L11 13"></path>
+                    <path d="M22 2L15 22L11 13L2 9L22 2Z"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div id="fifth-content" style="display: none;">
+        <div class="cat-message-wrapper">
+            <img src="assets/media/uwu.png" alt="Cat" class="uwu-img">
+            <div class="container">
+                <div class="arrow">
+                    <div class="outer"></div>   
+                    <div class="inner"></div>
+                </div>
+                <div class="message-body">
+                    <p id="typewriter-fifth"></p>
+                </div>
+            </div>
+        </div>
+        <div class="button-group">
+            <button id="yes-btn">Yes</button>
+            <button id="no-btn">No</button>
+        </div>
+    </div>
+
+    <div id="sixth-content" style="display: none;">
+        <canvas id="hearts-canvas"></canvas>
+        <img src="assets/media/mi.png" alt="Cat" class="mi-img">
+    </div>
+
+    <div id="seventh-content" style="display: none;">
+        <canvas id="rain-canvas"></canvas>
+        <img src="assets/media/huhu.png" alt="Cat" class="huhu-img">
+        <button id="kidding-btn">Aww just kidding, ofc!</button>
+    </div>
+    
+    <audio id="bgmusic" loop>
+        <source src="assets/audio/pokemon.mp3" type="audio/mpeg">
+    </audio>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
